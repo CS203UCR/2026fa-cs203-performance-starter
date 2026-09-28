@@ -207,7 +207,7 @@ int main(int argc, char *argv[])
 // Apply fallback defaults if containers or pointers are empty
     if (sizes.empty())       sizes = {1024 * 1024};
     if (functions.empty())   functions = {"baseline_int"};
-    if (frequencies.empty()) frequencies = {4600};
+    if (frequencies.empty()) frequencies = {3800};
     if (stat_file == nullptr) stat_file = default_filename;
     std::map<const std::string, uint64_t*(*)(uint64_t *, unsigned long int)>
     function_map =
